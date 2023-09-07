@@ -1,4 +1,3 @@
-<script>
 function showSection(sectionId) {
     // Check if a hash fragment exists in the URL
     if (window.location.hash) {
@@ -23,8 +22,7 @@ function showSection(sectionId) {
     // Update the URL hash fragment
     window.location.hash = sectionId;
 }
-    </script>
-<script>
+
 window.addEventListener('DOMContentLoaded', function () {
   const nameElement = document.getElementById('name');
   
@@ -58,8 +56,7 @@ window.addEventListener('DOMContentLoaded', function () {
   // Add an event listener for screen width changes
   window.addEventListener('resize', updateNameDisplay);
 });
-</script>
-<script>
+
 document.addEventListener('DOMContentLoaded', function () {
     const projectWrappers = document.querySelectorAll('.case-wrapper');
     const filterButtons = document.querySelectorAll('.filter-tags button');
@@ -93,4 +90,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-</script>
+document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".filter-tags button");
+    
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            // Toggle the 'active' class on the clicked button
+            this.classList.toggle("active");
+        });
+    });
+});
