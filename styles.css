@@ -430,13 +430,26 @@ section {
 
 .case-wrapper {
     width: calc(50% - 20px);
+            transition: 0.5s;
 }
 
 .case-wrapper img {
     border-radius: 20px;
     filter: brightness(90%);
     width: 100%;
+            transition: 0.5s;
 }
+
+.case-wrapper:hover .image-caption {
+    text-decoration: underline!important;
+            transition: 0.5s;
+}
+
+.case-wrapper:hover img {
+        filter: brightness(50%);
+        transition: 0.5s;
+}
+
 
 /* CSS for the fade-up animation */
 .fade-up {
@@ -530,9 +543,17 @@ margin: 0;
     color: black;
     border: none;
     margin-bottom: 10px;
-margin-top: 20px;
+    margin-top: 20px;
 transition: 0.3s;
 outline: 2px solid transparent;
+    font-size: max(1.4vw, 20px);
+    line-height: 1.4285714286;
+}
+
+.filter-tags {
+    display: inline-flex;
+    gap: 10px;
+        flex-wrap: wrap;
 }
 
 .filter-tags button:hover {
