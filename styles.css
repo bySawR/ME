@@ -546,3 +546,12 @@ button.active.active-tag {
   background: #C7C7C7;
   transition: outline 0s; /* Set the transition for outline to 0s */
 }
+
+@media only screen and (max-width: 1024px) {
+    .filter-tags button {
+    font-size: 3vw;
+    line-height: 1.4285714286;
+        margin-bottom: 5px;
+margin-top: 5px;
+}
+    }

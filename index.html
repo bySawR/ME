@@ -7,7 +7,7 @@
 <div class="header">
   <h1 id="name"><a href="#" onclick="showSection('home')">Marcus Evensen®</a></h1>
   <nav>
-    <a href="#" onclick="showSection('home')">Prosjekter</a>
+    <a href="#prosjekter" onclick="showSection('home', true)">Prosjekter</a>
     <a href="#" onclick="showSection('kontakt')">Kontakt</a>
   </nav>
 </div>
@@ -59,7 +59,7 @@
                 <button data-tag="seo">SEO</button>
                 <!-- Add more filter tags as needed -->
             </div>
-            <div class="innhold-100 fade-up">
+            <div class="innhold-100 fade-up" id="prosjekter">
                 <!-- CASE START -->
                 <div class="case-wrapper" data-tags="identitet">
                     <a href="https://marcusevensen.no/digdir">
@@ -265,17 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <script>
-    function showSection(sectionId) {
-    // Check if a hash fragment exists in the URL
-    if (window.location.hash) {
-        // Hide the section associated with the current hash fragment
-        const currentSectionId = window.location.hash.substring(1);
-        const currentSection = document.getElementById(currentSectionId);
-        if (currentSection) {
-            currentSection.style.display = 'none';
-        }
-    }
-
+function showSection(sectionId, scrollToProsjekter) {
     // Hide all sections
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
@@ -288,11 +278,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Update the URL hash fragment
     window.location.hash = sectionId;
+
+    // Check if scrollToProsjekter is true, and scroll to the Prosjekter section within the Home section
+    if (scrollToProsjekter && sectionId === 'home') {
+        const prosjekterSection = document.getElementById('prosjekter');
+        if (prosjekterSection) {
+            // Calculate the position of the Prosjekter section relative to the viewport
+            const offset = prosjekterSection.getBoundingClientRect().top;
+
+            // Scroll to the Prosjekter section manually
+            window.scrollTo({
+                top: window.scrollY + offset,
+                behavior: 'smooth',
+            });
+        }
+    }
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-    // Your existing code for handling window width and other DOMContentLoaded tasks
-});
 </script>
 <script>
     window.addEventListener('DOMContentLoaded', function () {
