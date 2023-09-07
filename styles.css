@@ -526,28 +526,22 @@ margin: 0;
     text-transform: none;
     padding: 10px;
     border-radius: 10px;
-    background: #f3f3f3e5;
+    background: #E5E5E5;
     color: black;
     border: none;
     margin-bottom: 10px;
 margin-top: 20px;
-transition: 0.5s;
+transition: 0.3s;
 outline: 2px solid transparent;
 }
 
 .filter-tags button:hover {
-    background: #c7c7c7e5;
+    background: #C7C7C7;
 transition: 0.5s;
 }
 
-.filter-tags button:active {
-    background: #c7c7c7e5;
-transition: 0.5s;
-outline: 2px solid black;
-}
-
-.filter-tags button:focus {
-    background: #c7c7c7e5;
-transition: 0.5s;
-outline: 2px solid transparent;
+button.active.active-tag {
+  outline: 2px solid black;
+  background: #C7C7C7;
+  transition: outline 0s; /* Set the transition for outline to 0s */
 }

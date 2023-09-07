@@ -1,3 +1,4 @@
+
 function showSection(sectionId) {
     // Check if a hash fragment exists in the URL
     if (window.location.hash) {
@@ -91,12 +92,33 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".filter-tags button");
-    
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            // Toggle the 'active' class on the clicked button
-            this.classList.toggle("active");
-        });
+  const buttons = document.querySelectorAll(".filter-tags button");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", function() {
+      // Check if the button is already active
+      const isActive = this.classList.contains("active-tag");
+
+      // Deactivate all buttons
+      buttons.forEach(btn => btn.classList.remove("active-tag"));
+
+      // Toggle the 'active-tag' class if the button is not already active
+      if (!isActive) {
+        this.classList.add("active-tag");
+      }
+
+      // Filter projects by tag
+      const selectedTag = this.getAttribute('data-tag');
+      projectWrappers.forEach(wrapper => {
+        const tags = wrapper.getAttribute('data-tags').split(' ');
+        if (tags.includes(selectedTag) || selectedTag === 'all') {
+          wrapper.style.display = 'block';
+        } else {
+          wrapper.style.display = 'none';
+        }
+      });
     });
+  });
 });
+
+
