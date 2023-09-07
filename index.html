@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
- <div class="embed-code js-builder-embed-code">
-					
-
-
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
 <div class="header">
-  <h1 id="name" style="display: block;"><a href="#" onclick="showSection('home')">Marcus Evensen®</a></h1>
+  <h1 id="name"><a href="#" onclick="showSection('home')">Marcus Evensen®</a></h1>
   <nav>
-    <a href="#prosjekter">Prosjekter</a>
+    <a href="#" onclick="showSection('prosjekter')">Prosjekter</a>
     <a href="#" onclick="showSection('kontakt')">Kontakt</a>
   </nav>
 </div>
@@ -17,7 +14,7 @@
 
 
  <main>
-<div id="home" class="section" style="display: block;">
+<div id="home" class="section">
     <section class="no-top-padding">
         <div class="seksjon-wrapper">
             <div class="innhold-50 fade-up visible">
@@ -52,14 +49,14 @@
             <div class="innhold-100 fade-up visible">
                 <h1 class="subtitle">Prosjekter 💼</h1>
             </div>            <div class="filter-tags fade-up visible">
-                <button data-tag="identitet" class="">Identitet</button>
-                <button data-tag="illustrasjon" class="">Illustrasjon</button>
-                <button data-tag="animasjon" class="">Animasjon</button>
+                <button data-tag="identitet">Identitet</button>
+                <button data-tag="illustrasjon">Illustrasjon</button>
+                <button data-tag="animasjon">Animasjon</button>
                 <!-- Add more filter tags as needed -->
             </div>
-            <div class="innhold-100 fade-up visible">
+            <div class="innhold-100 fade-up">
                 <!-- CASE START -->
-                <div class="case-wrapper" data-tags="identitet" style="display: block;">
+                <div class="case-wrapper" data-tags="identitet">
                     <a href="https://marcusevensen.no/digdir">
                         <img src="https://images.payhip.com/o_1h62kfq61rm3qsb1bc7mu021oh.gif" alt="Digdir">
                         <div class="image-caption">
@@ -70,7 +67,7 @@
                 <!-- CASE END -->
 
                 <!-- CASE START -->
-                <div class="case-wrapper" data-tags="illustrasjon" style="display: block;">
+                <div class="case-wrapper" data-tags="illustrasjon">
                     <a href="https://marcusevensen.no/">
                         <img src="https://payhip.com/cdn-cgi/image/format=auto,width=auto/https://pe56d.s3.amazonaws.com/o_1h9l4djlb1j91gju1k5dqto1ssq2i.png" alt="Kommer snart">
                         <div class="image-caption">
@@ -81,7 +78,7 @@
                 <!-- CASE END -->
 
                 <!-- CASE START -->
-                <div class="case-wrapper" data-tags="animasjon" style="display: block;">
+                <div class="case-wrapper" data-tags="animasjon">
                     <a href="https://marcusevensen.no/">
                         <img src="https://payhip.com/cdn-cgi/image/format=auto,width=auto/https://pe56d.s3.amazonaws.com/o_1h9l54slf4kr1h2sjpeljp1k7o2r.png" alt="Animasjon">
                         <div class="image-caption">
@@ -92,7 +89,7 @@
                 <!-- CASE END -->
 
                                 <!-- CASE START -->
-                <div class="case-wrapper" data-tags="animasjon" style="display: block;">
+                <div class="case-wrapper" data-tags="animasjon">
                     <a href="https://marcusevensen.no/">
                         <img src="https://payhip.com/cdn-cgi/image/format=auto,width=auto/https://pe56d.s3.amazonaws.com/o_1h9l54slf4kr1h2sjpeljp1k7o2r.png" alt="Animasjon">
                         <div class="image-caption">
@@ -115,10 +112,10 @@
 <div id="design" class="section" style="display: none;">
     <section class="no-top-padding">
         <div class="seksjon-wrapper">
-            <div class="innhold-25 fade-up visible">
+            <div class="innhold-25 fade-up">
                  <h1 class="subtitle">Grafisk design ✒️</h1>
             </div>
-            <div class="innhold-75 fade-up visible">
+            <div class="innhold-75 fade-up">
                 <h1>Få skreddersydd grafisk design som gir din merkevare et løft. Jeg tar hånd om alt fra logoer og brosjyrer til digitale annonser og emballasjedesign. Resultatet er visuelt tiltalende materiale som skiller seg ut og fanger oppmerksomheten til dine kunder.</h1>
             </div>
         </div>
@@ -188,10 +185,10 @@
 <div id="innholdsproduksjon" class="section" style="display: none;">
     <section class="no-top-padding">
         <div class="seksjon-wrapper">
-            <div class="innhold-25 fade-up visible">
+            <div class="innhold-25 fade-up">
                  <h1 class="subtitle">Innholdsproduksjon 📝</h1>
             </div>
-            <div class="innhold-75 fade-up visible">
+            <div class="innhold-75 fade-up">
                 <h1>Skap engasjement med overbevisende innhold. Jeg leverer bilder og videoer og annet innhold som forteller din historie på en unik måte og bygger et sterkt forhold til dine følgere.</h1>
             </div>
         </div>
@@ -209,103 +206,3 @@
         </div>
     </section>
 </div>
-
-
-<script>
-function showSection(sectionId) {
-    // Check if a hash fragment exists in the URL
-    if (window.location.hash) {
-        // Hide the section associated with the current hash fragment
-        const currentSectionId = window.location.hash.substring(1);
-        const currentSection = document.getElementById(currentSectionId);
-        if (currentSection) {
-            currentSection.style.display = 'none';
-        }
-    }
-
-    // Hide all sections
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-
-    // Show the selected section
-    const selectedSection = document.getElementById(sectionId);
-    selectedSection.style.display = 'block';
-
-    // Update the URL hash fragment
-    window.location.hash = sectionId;
-}
-    </script>
-<script>
-window.addEventListener('DOMContentLoaded', function () {
-  const nameElement = document.getElementById('name');
-  
-  function updateNameDisplay() {
-    if (window.innerWidth <= 1024) {
-      nameElement.style.display = 'none';
-      // Create and append a new <h1> element with "ME" if it doesn't exist
-      if (!document.getElementById('initials')) {
-        const initialsElement = document.createElement('h1');
-        initialsElement.id = 'initials';
-        initialsElement.textContent = 'ME';
-        nameElement.parentNode.insertBefore(initialsElement, nameElement);
-      }
-      // Update the URL hash fragment to link to the home section
-      window.location.hash = 'home';
-    } else {
-      // Remove the "ME" element and display the full name
-      const initialsElement = document.getElementById('initials');
-      if (initialsElement) {
-        nameElement.style.display = 'block';
-        initialsElement.parentNode.removeChild(initialsElement);
-      }
-      // Remove the URL hash fragment
-      window.location.hash = '';
-    }
-  }
-
-  // Check the initial screen width
-  updateNameDisplay();
-  
-  // Add an event listener for screen width changes
-  window.addEventListener('resize', updateNameDisplay);
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const projectWrappers = document.querySelectorAll('.case-wrapper');
-    const filterButtons = document.querySelectorAll('.filter-tags button');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const selectedTag = button.getAttribute('data-tag');
-
-            // Check if the button is already active
-            if (button.classList.contains('active')) {
-                // Deactivate all buttons and show all projects
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                projectWrappers.forEach(wrapper => {
-                    wrapper.style.display = 'block';
-                });
-            } else {
-                // Activate the clicked button and filter projects by tag
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                projectWrappers.forEach(wrapper => {
-                    const tags = wrapper.getAttribute('data-tags').split(' ');
-                    if (tags.includes(selectedTag) || selectedTag === 'all') {
-                        wrapper.style.display = 'block';
-                    } else {
-                        wrapper.style.display = 'none';
-                    }
-                });
-            }
-        });
-    });
-});
-
-</script>
-
-				</div>
