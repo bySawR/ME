@@ -467,6 +467,7 @@ padding-bottom: 20vh;
             width: 100%;
             display: inline-flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
                 .innhold-25 {
