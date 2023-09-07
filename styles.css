@@ -538,3 +538,9 @@ transition: 0.5s;
     background: #c7c7c7e5;
 transition: 0.5s;
 }
+
+.filter-tags button:active {
+    background: #c7c7c7e5;
+transition: 0.5s;
+outline: 2px solid black;
+}
