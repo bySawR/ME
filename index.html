@@ -332,24 +332,46 @@ function showSection(sectionId, scrollToProsjekter) {
 });
 </script>
 <script>
-  // Get all the buttons inside the .filter-tags container
-  const buttons = document.querySelectorAll('.filter-tags button');
+document.addEventListener('DOMContentLoaded', function () {
+    const projectWrappers = document.querySelectorAll('.case-wrapper');
+    const filterButtons = document.querySelectorAll('.filter-tags button');
 
-  // Function to handle button click
-  function handleButtonClick(event) {
-    // Remove the 'selected' class from all buttons
-    buttons.forEach(button => {
-      button.classList.remove('selected');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedTag = button.getAttribute('data-tag');
+            const isAlreadySelected = button.classList.contains('selected');
+
+            // Remove the 'selected' class from all buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('selected');
+            });
+
+            // Show all projects when "Show All" is clicked or the button is already selected
+            if (selectedTag === 'all' || isAlreadySelected) {
+                projectWrappers.forEach(wrapper => {
+                    wrapper.style.display = 'block';
+                });
+            } else {
+                // Add the 'selected' class to the clicked button
+                button.classList.add('selected');
+
+                // Hide all projects initially
+                projectWrappers.forEach(wrapper => {
+                    wrapper.style.display = 'none';
+                });
+
+                // Show projects with the selected data-tag
+                projectWrappers.forEach(wrapper => {
+                    const projectTags = wrapper.getAttribute('data-tags');
+                    if (projectTags && projectTags.includes(selectedTag)) {
+                        wrapper.style.display = 'block';
+                    }
+                });
+            }
+        });
     });
+});
 
-    // Add the 'selected' class to the clicked button
-    event.target.classList.add('selected');
-  }
-
-  // Add click event listeners to all buttons
-  buttons.forEach(button => {
-    button.addEventListener('click', handleButtonClick);
-  });
 </script>
   </body>
 </html>
