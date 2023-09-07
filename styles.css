@@ -433,8 +433,9 @@ section {
 }
 
 .case-wrapper img {
-border-radius: 20px;
-filter: brightness(90%);
+    border-radius: 20px;
+    filter: brightness(90%);
+    width: 100%;
 }
 
 /* CSS for the fade-up animation */
