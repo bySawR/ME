@@ -301,6 +301,26 @@ h1.subtitle {
     line-height: 1.4285714286;
 }
 
+@media only screen and (max-width: 1024px) {
+h1.subtitle {
+    font-size: 3vw;
+    line-height: 1.4285714286;
+}
+
+.header a {
+    font-size: max(3vw, 20px)!important;
+    line-height: 1.4285714286;
+}
+
+.header-nav-list, .header h1 {
+    font-size: max(3vw, 20px)!important;
+    line-height: 1.4285714286;
+}
+
+h1 {
+font-size: max(6vw, 40px);
+}
+    }
 
 nav {
     display: flex;
