@@ -549,5 +549,5 @@ outline: 2px solid black;
 .filter-tags button:focus {
     background: #c7c7c7e5;
 transition: 0.5s;
-outline: 2px solid black;
+outline: 2px solid transparent;
 }
