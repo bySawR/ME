@@ -63,11 +63,6 @@ p a {
 text-decoration: none!important;
 }
 
-/* Body Størrelse */
- body#page-collection .page-container, .section-wrapper, .section-wrapper .section-contents-wrapper, #header[data-section-setting-header-width="inset"] .header-inner, .section-wrapper[data-section-key="video-simple"][data-section-setting-section-width="fullWidth"] .heading-text-main-wrapper {
-     min-width: 100%;
-}
-
 #header .header-outer {
     position: relative;
     z-index: 3;
@@ -78,28 +73,6 @@ text-decoration: none!important;
     pointer-events: auto;
 transition: 0.6s;
 padding-top: 1vh;
-}
-
-
-
-@media only screen and (max-width: 1024px) {
-.header-title-text a, #header[data-section-setting-color-scheme-id="blackPrimary"] nav.header-nav-list a  {
-font-size: 18px;
-}
-}
-
-.section-wrapper[data-section-setting-color-scheme-id="lightPrimary"] {
-padding-left: 0vw;
-padding-right: 0vw;
-}
-
-
-#header[data-section-setting-color-scheme-id="blackPrimary"] nav.header-nav-list a:hover {
-transition: 0.6s;
-}
-
-.powered-by-payhip-wrapper {
-display: none;
 }
 
 
@@ -397,6 +370,12 @@ width: 100%;
 section {
     min-height: 50vh;
 }
+
+@media only screen and (max-width: 1024px) {
+section {
+    min-height: unset;
+}
+    }
 
 .no-top-padding {
     padding-top: 0;

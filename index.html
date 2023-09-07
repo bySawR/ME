@@ -240,19 +240,31 @@ fadeUpElements.forEach((element) => {
 });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const projectWrappers = document.querySelectorAll('.case-wrapper');
     const filterButtons = document.querySelectorAll('.filter-tags button');
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Your code for filtering projects
+            const selectedTag = button.getAttribute('data-tag');
+            
+            // Hide all projects initially
+            projectWrappers.forEach(wrapper => {
+                wrapper.style.display = 'none';
+            });
+
+            // Show projects with the selected data-tag
+            projectWrappers.forEach(wrapper => {
+                const projectTags = wrapper.getAttribute('data-tags');
+                if (projectTags && projectTags.includes(selectedTag)) {
+                    wrapper.style.display = 'block';
+                }
+            });
         });
     });
 });
 </script>
 <script>
-    <script>
     function showSection(sectionId) {
     // Check if a hash fragment exists in the URL
     if (window.location.hash) {
