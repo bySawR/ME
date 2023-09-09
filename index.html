@@ -5,9 +5,10 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="shortcut icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400&amp;display=swap" rel="stylesheet">
-<div class="header">
-  <h1 id="name"><a href="#" onclick="showSection('home')">Marcus Evensen®</a></h1>
+<div class="header fade-up">
+  <h1 id="name"><a href="#" onclick="showSection('home')">Marcus Evensen ®</a></h1>
   <nav>
+        <a href="#tjenester" onclick="showSection('home', true)">Tjenester</a>
     <a href="#prosjekter" onclick="showSection('home', true)">Prosjekter</a>
     <a href="#" onclick="showSection('kontakt')">Kontakt</a>
   </nav>
@@ -17,7 +18,7 @@
     <body>
 <div id="home" class="section">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up ">
             <div class="innhold-50 fade-up visible">
                 <h1 class="subtitle">Velkommen 👋<br>Mitt navn er Marcus Alexander Evensen,<br>og jeg er grafisk designer og utvikler 🎨</h1>
             </div>
@@ -26,9 +27,9 @@
             </div>
         </div>
     </section>
-
+<div id="tjenester">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up green-section">
             <div class="innhold-25 fade-up visible">
                 <h1 class="subtitle">Tjenester 💡</h1>
             </div>
@@ -43,10 +44,11 @@
         <h1><a href="#" onclick="showSection('seo')">SEO</a></h1>
             </div>
         </div>
+    </div>
     </section>
 <div id="prosjekter">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper column-case">
+        <div class="seksjon-wrapper fade-up  column-case">
             <div class="innhold-100 fade-up visible">
                 <h1 class="subtitle">Prosjekter 💼</h1>
             </div>            <div class="filter-tags fade-up visible">
@@ -117,7 +119,7 @@
         </main>
 <div id="design" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                  <h1 class="subtitle">Grafisk design ✒️</h1>
             </div>
@@ -127,10 +129,9 @@
         </div>
     </section>
 </div>
-
 <div id="uiuxdesign" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                  <h1 class="subtitle">UI/UX Design 🖌️</h1>
             </div>
@@ -142,7 +143,7 @@
 </div>
 <div id="animasjon" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                  <h1 class="subtitle">Animasjon 🎬</h1>
             </div>
@@ -154,7 +155,7 @@
 </div>
 <div id="prosjektledelse" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                  <h1 class="subtitle">Prosjektledelse 📊</h1>
             </div>
@@ -166,7 +167,7 @@
 </div>
 <div id="utvikling" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                 <h1 class="subtitle">Utvikling 💻</h1>
             </div>
@@ -178,7 +179,7 @@
 </div>
 <div id="markedsforing" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                  <h1 class="subtitle">Markedsføring 📈</h1>
             </div>
@@ -190,7 +191,7 @@
 </div>
 <div id="innholdsproduksjon" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                  <h1 class="subtitle">Innholdsproduksjon 📝</h1>
             </div>
@@ -202,7 +203,7 @@
 </div>
 <div id="seo" class="section" style="display: none;">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+        <div class="seksjon-wrapper fade-up">
             <div class="innhold-25 fade-up">
                  <h1 class="subtitle">SEO 🔍</h1>
             </div>
@@ -212,7 +213,6 @@
         </div>
     </section>
 </div>
-  <script src="script.js" type="text/javascript"></script>
   <script>
     // Intersection Observer code
 function handleIntersection(entries, observer) {
@@ -374,5 +374,42 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to add or remove the 'green-section' class based on the current section
+    function updateHeaderStyle(currentSectionId) {
+        const header = document.querySelector('.header');
+        const greenSectionIds = [
+            'design',
+            'uiuxdesign',
+            'animasjon',
+            'prosjektledelse',
+            'utvikling',
+            'markedsforing',
+            'innholdsproduksjon',
+            'seo'
+        ];
+
+        // Check if the current section's id is in the greenSectionIds array
+        if (greenSectionIds.includes(currentSectionId)) {
+            header.classList.add('green-section');
+        } else {
+            header.classList.remove('green-section');
+        }
+    }
+
+    // Initial update when the page loads
+    const currentSectionId = window.location.hash.replace('#', '');
+    updateHeaderStyle(currentSectionId);
+
+    // Update the header style whenever the section changes (e.g., when navigating between sections)
+    window.addEventListener('hashchange', function () {
+        const currentSectionId = window.location.hash.replace('#', '');
+        updateHeaderStyle(currentSectionId);
+    });
+});
+</script>
+
+
   </body>
 </html>
