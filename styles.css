@@ -541,3 +541,21 @@ height: 100vh;
     text-decoration: underline;
     text-decoration-color: var(--green);
 }
+
+.watermark {
+    display: flex;
+    align-items: center;
+    color: rgb(65 65 65 / 100%)!important;
+    justify-content: center;
+    transition: 0.5s;
+    text-decoration: none!important;
+}
+
+.watermark a:hover {
+    display: flex;
+    align-items: center;
+    color: white!important;
+    transition: 0.5s;
+    justify-content: center;
+    text-decoration: none!important;
+}
