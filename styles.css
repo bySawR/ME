@@ -456,8 +456,8 @@ margin: 0;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 296px;
-    background-color: rgb(65 65 65 / 30%);
-    color: white;
+    background-color: rgb(65 65 65 / 10%);
+    color: var(--black);
     border: none;
     margin-bottom: 10px;
 transition: 0.3s;
@@ -475,7 +475,7 @@ outline: 2px solid transparent;
 }
 
 .filter-tags button:hover {
-    background-color: rgb(65 65 65 / 80%);
+    background-color: rgb(65 65 65 / 30%);
 transition: 0.5s;
 cursor: pointer;
 }
@@ -497,8 +497,8 @@ margin-top: 5px;
     }
 
 .filter-tags button.selected {
-  outline: 2px solid var(--green);
-      background-color: rgb(65 65 65 / 50%);
+  outline: 2px solid var(--black);
+      background-color: rgb(65 65 65 / 30%);
 transition: outline 0s; /* Set the transition for outline to 0s */
 }
 
