@@ -192,7 +192,6 @@ a {
 .image-caption {
     font-size: max(1.4vw, 20px);
     line-height: 1.4285714286;
-    color: white;
 }
 
 
@@ -204,8 +203,8 @@ body::-webkit-scrollbar {
 /* Global styles */
 body {
     font-family: var(--brandfont), sans-serif;
-    background: #121211;
-    color: white;
+  background-color: white;
+  color: var(--black)
 }
 
 h1, h2, p {
@@ -250,7 +249,6 @@ nav {
 .header a {
     font-size: max(1.4vw, 20px);
     line-height: 1.4285714286;
-    color: white;
 }
 
 
@@ -514,11 +512,6 @@ transition: outline 0s; /* Set the transition for outline to 0s */
   color: var(--black)!important;
 }
 
-.white-section {
-  background-color: white;
-  color: var(--black)
-}
-
 .seksjon-wrapper {
 display: flex;
 flex-direction: row;
@@ -535,6 +528,7 @@ height: 100vh;
     align-content: center;
     align-items: center;
     padding: 40px;
+    background: transparent;
 }
 
 .header-nav-list {

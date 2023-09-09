@@ -18,7 +18,7 @@
     <body>
 <div id="home" class="section">
     <section class="no-top-padding">
-        <div class="seksjon-wrapper white-section fade-up ">
+        <div class="seksjon-wrapper fade-up ">
             <div class="innhold-50 fade-up visible">
                 <h1 class="subtitle">Velkommen 👋<br>Mitt navn er Marcus Alexander Evensen,<br>og jeg er grafisk designer og utvikler 🎨</h1>
             </div>
@@ -339,41 +339,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Function to add or remove the 'green-section' class based on the current section
-    function updateHeaderStyle(currentSectionId) {
-        const header = document.querySelector('.header');
-        const greenSectionIds = [
-            'design',
-            'uiuxdesign',
-            'animasjon',
-            'prosjektledelse',
-            'utvikling',
-            'markedsforing',
-            'innholdsproduksjon',
-            'seo'
-        ];
-
-        // Check if the current section's id is in the greenSectionIds array
-        if (greenSectionIds.includes(currentSectionId)) {
-            header.classList.add('green-section');
-        } else {
-            header.classList.remove('green-section');
-        }
-    }
-
-    // Initial update when the page loads
-    const currentSectionId = window.location.hash.replace('#', '');
-    updateHeaderStyle(currentSectionId);
-
-    // Update the header style whenever the section changes (e.g., when navigating between sections)
-    window.addEventListener('hashchange', function () {
-        const currentSectionId = window.location.hash.replace('#', '');
-        updateHeaderStyle(currentSectionId);
-    });
-});
 </script>
   </body>
 </html>
