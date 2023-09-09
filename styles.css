@@ -364,7 +364,6 @@ section {
 }
 
 .case-wrapper:hover .image-caption {
-    text-decoration: underline!important;
     text-decoration-color: var(--green);
 }
 
