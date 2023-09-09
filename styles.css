@@ -47,7 +47,6 @@ html {
 * {
 font-family: var(--brandfont)!important;
 font-weight: 400!important;
-letter-spacing: 1px;
 text-underline-offset: 4px;
 }
 
