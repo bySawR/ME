@@ -118,13 +118,13 @@ min-width: 15vw;
 }
 
 ::selection {
-     background-color: var(--black);
-     color: var(--white);
+     background-color: var(--green);
+     color: var(--black);
 }
 
 ::-moz-selection {
-     background-color: var(--black);
-     color: var(--white);
+     background-color: var(--green);
+     color: var(--black);
 }
 
 @media (max-width: 1050px) {
@@ -225,22 +225,20 @@ h1.subtitle {
 
 @media only screen and (max-width: 1024px) {
 h1.subtitle {
-    font-size: 3vw;
-    line-height: 1.4285714286;
+font-size: max(5.3333333333vw, 20px);
+}
+
+.image-caption {
+    font-size: 42px;
 }
 
 .header a {
-    font-size: max(3vw, 20px)!important;
-    line-height: 1.4285714286;
-}
-
-.header-nav-list, .header h1 {
-    font-size: max(3vw, 20px)!important;
-    line-height: 1.4285714286;
+    font-size: 42px!important;
+    line-height: 60px!important;
 }
 
 h1 {
-font-size: max(6vw, 40px);
+font-size: max(10.1333333333vw, 38px)
 }
     }
 
@@ -257,8 +255,8 @@ nav {
 
 
 .header-nav-list, .header h1 {
-    font-size: max(1.4vw, 20px);
-    line-height: 1.4285714286;
+    font-size: 42px!important;
+    line-height: 60px!important;
 }
 
 
@@ -418,10 +416,13 @@ main a.case-wrapper a:before {
 @media only screen and (max-width: 1024px) {
 .seksjon-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    flex-direction: column!important;
+    padding-top: 10vh!important;
+    padding-bottom: 10vh!important;
+    padding-left: 40px!important;
+    padding-right: 40px!important;
+    height: unset!important;
+    gap: 50px!important;
 }
 .innhold-75 {
     width: 100%;
@@ -490,8 +491,8 @@ button.active.active-tag {
 
 @media only screen and (max-width: 1024px) {
     .filter-tags button {
-    font-size: 3vw;
-    line-height: 1.4285714286;
+    font-size: 42px!important;
+    line-height: 60px!important;
         margin-bottom: 5px;
 margin-top: 5px;
 }
