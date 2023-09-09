@@ -1,10 +1,10 @@
 
-		:root {
-     --black: #000000;
-     --white: #ffffff;
-   --blue: #0079FF;
---brandfont: Bricolage Grotesque, sans-serif;
---green: #98fa00;
+:root {
+    --black: #121211;
+    --white: #ffffff;
+    --blue: #0079FF;
+    --brandfont: Bricolage Grotesque, sans-serif;
+    --green: #98fa00;
 }
 
 .meta-wrapper p {
@@ -149,31 +149,6 @@ min-width: 15vw;
 }
     }
 
-.section-wrapper[data-section-setting-section-height=small]:not([data-section-key=gallery]) {
-    min-height: 20vh;
-}
-
-.header-display-mobile {
-    display: flex;
-    flex-direction: row-reverse!important;
-    text-align: left!important;
-}
-
-#header .header-display-mobile .header-title {
-    text-align: left;
-padding-left: 4vw!important;
-}
-
-#header .header-display-mobile .header-actions {
-    display: none!important;
-}
-
-@media (max-width: 1050px) {
-#header .header-display-mobile .header-burger {
-    padding-right: 4vw!important;
-}
-}
-
 /* Reset some default styles */
 * {
     margin: 0;
@@ -184,7 +159,7 @@ padding-left: 4vw!important;
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 .tjenestelenker a {
@@ -530,7 +505,7 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 }
 
 .black-section {
-  background-color: black;
+  background-color: var(--black);
   color: white;
 }
 
