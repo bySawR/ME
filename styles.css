@@ -611,3 +611,25 @@ height: 100vh;
     transform: translate3d(-100%, 0, 0);
   }
 }
+
+.footer {
+    border-top: 1px solid black;
+    padding: 40px;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer h1.subtitle {
+    font-size: 16px;
+    text-underline-offset: 4px!important;
+}
+
+.footer a {
+    text-underline-offset: 4px!important;
+}
+
+@media only screen and (max-width: 1024px) {
+.footer h1.subtitle {
+font-size: 32px;
+}
