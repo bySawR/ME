@@ -586,7 +586,6 @@ height: 100vh;
 }
 .ticker-wrap .ticker__item {
   display: inline-block;
-  padding: 0 2rem;
   font-size: 2rem;
   color: var(--black);
 }
