@@ -566,6 +566,7 @@ height: 100vh;
   height: 4rem;
   background-color: var(--green);
   box-sizing: content-box;
+  outline: 1px solid black;
 }
 .ticker-wrap .ticker {
   display: inline-block;
