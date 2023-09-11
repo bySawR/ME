@@ -613,7 +613,6 @@ height: 100vh;
 }
 
 .footer {
-    border-top: 1px solid black;
     padding: 40px;
     min-height: 5vh;
     display: flex;
@@ -632,4 +631,13 @@ height: 100vh;
 @media only screen and (max-width: 1024px) {
 .footer h1.subtitle {
 font-size: 32px;
+}
+}
+
+.innhold-50-right {
+    text-align: right!important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
 }
