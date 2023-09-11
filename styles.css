@@ -239,6 +239,17 @@ font-size: max(5.3333333333vw, 20px);
 h1 {
 font-size: max(10.1333333333vw, 38px)
 }
+
+h1.subtitle-meta {
+    font-size: 40px!important;
+    line-height: 56px!important;
+}
+
+h1.subtitle-meta-client {
+    font-size: 40px!important;
+        padding-top: 50px;
+    line-height: 56px!important;
+}
     }
 
 nav {
@@ -417,7 +428,7 @@ main a.case-wrapper a:before {
 .seksjon-wrapper {
     display: flex;
     flex-direction: column!important;
-    padding-top: 10vh!important;
+    padding-top: 0vh!important;
     padding-bottom: 10vh!important;
     padding-left: 40px!important;
     padding-right: 40px!important;
@@ -524,6 +535,16 @@ padding-right: 40px;
 height: 100vh;
     }
 
+
+.seksjon-wrapper-notop-padding {
+display: flex;
+flex-direction: row;
+padding-top: 0vh!important;
+padding-bottom: 15vh!important;
+padding-left: 40px!important;
+padding-right: 40px!important;
+    }
+
     .header{
     display: flex;
     justify-content: space-between;
@@ -620,6 +641,13 @@ height: 100vh;
     flex-direction: row;
 }
 
+@media only screen and (max-width: 1024px) {
+.footer {
+flex-direction: column;
+gap: 50px;
+}
+}
+
 .footer h1.subtitle {
     font-size: 16px;
     text-underline-offset: 4px!important;
@@ -632,6 +660,9 @@ height: 100vh;
 @media only screen and (max-width: 1024px) {
 .footer h1.subtitle {
 font-size: 32px;
+}
+.innhold-25-right {
+        justify-content: flex-start!important;
 }
 }
 
@@ -716,17 +747,16 @@ height: unset;
   }
   @media screen and (max-width: 1024px) {
     .color-box {
-      height: 150px;
+      height: 250px;
     }
     .color-box.small {
-      height: 150px;
+      height: 250px;
     }
     .color-box.large2 {
-      height: 150px;
+      height: 250px;
     }
   .color-name {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 24px;
 bottom: 5px;
 left: 5px;
   }
@@ -735,4 +765,18 @@ left: 5px;
 .digdir-font * {
     font-family: Inter, sans-serif!important;
     font-weight: 400!important;
+}
+
+  @media screen and (max-width: 1024px) {
+.typewriter-digdir {
+    font-size: 64px;
+}
+}   
+
+.gif-100 {
+    width: 100%;
+}
+
+.padding-top-0 {
+    padding-top: 0vh!important;
 }
