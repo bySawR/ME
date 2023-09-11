@@ -296,14 +296,16 @@ width: 100%;
 /* Fade-up animation */
 .fade-up {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s, transform 1s;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 1s ease-in-out;
 }
 
 .fade-up.fade-up-visible {
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 /* Section padding */
 section {
@@ -353,7 +355,7 @@ section {
 }
 
 .case-wrapper img {
-    border-radius: 20px;
+    border-radius: 0px;
     filter: brightness(90%);
     width: 100%;
             transition: 0.5s;
@@ -573,7 +575,6 @@ height: 100vh;
   height: 4rem;
   line-height: 4rem;
   white-space: nowrap;
-  padding-right: 100%;
   box-sizing: content-box;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
