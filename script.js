@@ -1,13 +1,10 @@
-  
-    // Intersection Observer code
+// Intersection Observer code
 function handleIntersection(entries, observer) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
         } else {
             entry.target.classList.remove('visible');
-            // Remove the 'visible' class when the element is not in the viewport
         }
     });
 }
@@ -16,7 +13,7 @@ function handleIntersection(entries, observer) {
 const observer = new IntersectionObserver(handleIntersection, {
     root: null,
     rootMargin: '0px',
-    threshold: 0.2,
+    threshold: 0.1,
 });
 
 // Add elements with the "fade-up" class to the observer
