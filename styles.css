@@ -7,6 +7,17 @@
     --green: #98fa00;
 }
 
+@font-face {
+  font-family: 'HelveticaNow';
+  src: url('fonts/helveticanow.woff') format('woff');
+  /* Add more src lines if you have different font file formats */
+}
+*/
+body {
+  font-family: 'CustomFont', Arial, sans-serif; /* Use your custom font */
+}
+*/
+
 .meta-wrapper p {
             font-size: 36px!important;
 line-height: 60px!important;
