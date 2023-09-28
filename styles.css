@@ -272,7 +272,7 @@ h1.subtitle-meta-client {
 
 nav {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .header a {
@@ -659,6 +659,7 @@ padding-right: 40px!important;
     display: flex;
     flex-direction: row;
     color: rgb(65 65 65 / 75%)!important;
+    background: #191919;
 }
 
 .footer a {
