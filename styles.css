@@ -3,13 +3,19 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'HelveticaNow', sans-serif;
+    --brandfont: 'Machina', sans-serif;
     --green: #98fa00;
 }
 
 @font-face {
   font-family: 'HelveticaNow';
   src: url('fonts/HelveticaNowDisplay-Regular.woff') format('woff');
+  /* Add more src lines if you have different font file formats */
+}
+
+@font-face {
+  font-family: 'Machina';
+  src: url('fonts/NeueMachina-Regular.woff') format('woff');
   /* Add more src lines if you have different font file formats */
 }
 
