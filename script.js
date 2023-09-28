@@ -1,3 +1,4 @@
+
 // Intersection Observer code
 function handleIntersection(entries, observer) {
     entries.forEach((entry) => {
@@ -77,7 +78,6 @@ function showSection(sectionId, scrollToProsjekter) {
         }
     }
 }
-
 
 
     window.addEventListener('DOMContentLoaded', function () {
@@ -207,3 +207,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     setTimeout(type, 1000);
+

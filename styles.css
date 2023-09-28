@@ -3,8 +3,9 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'Machina', sans-serif;
+    --brandfont: 'HelveticaNow', sans-serif;
     --green: #98fa00;
+    --darkgrey: #191919;
 }
 
 @font-face {
@@ -17,6 +18,10 @@
   font-family: 'Machina';
   src: url('fonts/NeueMachina-Regular.woff') format('woff');
   /* Add more src lines if you have different font file formats */
+}
+
+.small-padding {
+height: 70vh!important;
 }
 
 .meta-wrapper p {
@@ -172,7 +177,7 @@ min-width: 15vw;
 
 a {
     text-decoration: none;
-    color: var(--black);
+    color: white;
 }
 
 .tjenestelenker a {
@@ -216,8 +221,8 @@ body::-webkit-scrollbar {
 /* Global styles */
 body {
     font-family: var(--brandfont), sans-serif;
-  background-color: white;
-  color: var(--black)
+  background: #191919;
+  color: white;
 }
 
 h1, h2, p {
@@ -482,8 +487,8 @@ margin: 0;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 296px;
-    background-color: rgb(65 65 65 / 10%);
-    color: var(--black);
+    background-color: rgb(65 65 65 / 30%);
+    color: white;
     border: none;
     margin-bottom: 10px;
 transition: 0.3s;
@@ -501,7 +506,7 @@ outline: 2px solid transparent;
 }
 
 .filter-tags button:hover {
-    background-color: rgb(65 65 65 / 30%);
+    background-color: rgb(65 65 65 / 75%);
 transition: 0.5s;
 cursor: pointer;
 }
@@ -523,7 +528,7 @@ margin-top: 5px;
     }
 
 .filter-tags button.selected {
-  outline: 2px solid var(--black);
+  outline: 2px solid var(--white);
       background-color: rgb(65 65 65 / 30%);
 transition: outline 0s; /* Set the transition for outline to 0s */
 }
@@ -653,6 +658,11 @@ padding-right: 40px!important;
     min-height: 5vh;
     display: flex;
     flex-direction: row;
+    color: rgb(65 65 65 / 75%)!important;
+}
+
+.footer a {
+    color: rgb(65 65 65 / 75%)!important;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -818,3 +828,54 @@ cursor: pointer;
     text-decoration: none!important;
 
 }
+
+   .text-container {
+      display: inline-block;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 60px!important;
+      line-height: 72px;
+    }
+    
+    .text-container span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(1em);
+      animation: appear ease-out 1s forwards;
+    }
+    
+    .text-container span:nth-child(1) { animation-delay: 0s; }
+    .text-container span:nth-child(2) { animation-delay: 0.1s; }
+    .text-container span:nth-child(3) { animation-delay: 0.2s; }
+    .text-container span:nth-child(4) { animation-delay: 0.3s; }
+    .text-container span:nth-child(5) { animation-delay: 0.8s; }
+    .text-container span:nth-child(6) { animation-delay: 0.9s; }
+    .text-container span:nth-child(7) { animation-delay: 1s; }
+    .text-container span:nth-child(8) { animation-delay: 1.2s; }
+    .text-container span:nth-child(9) { animation-delay: 1.3s; }
+    .text-container span:nth-child(10) { animation-delay: 1.4s; }
+    .text-container span:nth-child(11) { animation-delay: 1.5s; }
+    .text-container span:nth-child(12) { animation-delay: 1.6s; }
+    .text-container span:nth-child(13) { animation-delay: 1.7s; }
+    .text-container span:nth-child(14) { animation-delay: 1.8s; }
+    .text-container span:nth-child(15) { animation-delay: 1.9s; }
+    .text-container span:nth-child(16) { animation-delay: 2s; }
+    .text-container span:nth-child(17) { animation-delay: 2.1s; }
+    .text-container span:nth-child(18) { animation-delay: 2.2s; }
+    .text-container span:nth-child(19) { animation-delay: 2.3s; }
+    .text-container span:nth-child(20) { animation-delay: 2.4s; }
+        .text-container span:nth-child(21) { animation-delay: 2.5s; }
+    
+    @keyframes appear {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .not-main-text {
+        color: rgb(65 65 65 / 75%);
+    }
