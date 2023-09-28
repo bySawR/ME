@@ -3,20 +3,15 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'Bricolage Grotesque', sans-serif;
+    --brandfont: 'HelveticaNow', sans-serif;
     --green: #98fa00;
 }
 
 @font-face {
   font-family: 'HelveticaNow';
-  src: url('fonts/helveticanow.woff') format('woff');
+  src: url('fonts/HelveticaNowDisplay-Regular.woff') format('woff');
   /* Add more src lines if you have different font file formats */
 }
-*/
-body {
-  font-family: 'CustomFont', Arial, sans-serif; /* Use your custom font */
-}
-*/
 
 .meta-wrapper p {
             font-size: 36px!important;
