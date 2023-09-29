@@ -727,16 +727,6 @@ font-size: 32px;
     width: 50%;
 }
 
-.digdir-section {
-  background-color: white;
-  color: black;
-}
-
-.digdir-section .header {
-  background-color: white;
-  color: black;
-}
-
 h1.subtitle-meta {
     font-size: 14px;
     line-height: 18px;
@@ -825,6 +815,11 @@ left: 5px;
     font-weight: 400!important;
 }
 
+.digdir-section {
+    background-color: white;
+    color: black;
+}
+
   @media screen and (max-width: 1024px) {
 .typewriter-digdir {
     font-size: 64px;
@@ -833,6 +828,7 @@ left: 5px;
 
 .gif-100 {
     width: 100%;
+    object-fit: contain;
 }
 
 .padding-top-0 {
