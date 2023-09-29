@@ -568,9 +568,11 @@ padding-right: 40px!important;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 40px;
-    padding-top: 20px;
-    background: transparent;
+    padding-left: 40px;
+    padding-right: 40px;
+    backdrop-filter: blur(30px);
+    background-color: #191919 50%;
+    z-index: 1;
 }
 
 .header-nav-list {
@@ -840,8 +842,8 @@ cursor: pointer;
       flex-wrap: wrap;
       gap: 12px;
       white-space: nowrap;
-      font-size: 72px!important;
-      line-height: 76px;
+      font-size: 64px!important;
+      line-height: 72px;
     }
     
     .text-container span {
@@ -883,3 +885,9 @@ cursor: pointer;
     .not-main-text {
         color: rgb(65 65 65 / 75%);
     }
+
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
