@@ -386,6 +386,7 @@ section {
     */
     width: 100%;
             transition: 0.5s;
+            padding-bottom: 20px;
 }
 
 .case-wrapper img {
