@@ -506,10 +506,13 @@ outline: 2px solid transparent;
 .filter-tags {
     display: inline-flex;
     gap: 5px;
-        flex-wrap: wrap;
-            padding-top: 10px;
-                        padding-bottom: 10px;
+    position: sticky;
+    top: 80px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 
 .filter-tags button:hover {
     background-color: rgb(65 65 65 / 75%);
@@ -556,7 +559,7 @@ padding-top: 15vh;
 padding-bottom: 15vh;
 padding-left: 40px;
 padding-right: 40px;
-height: 100vh;
+min-height: 100vh;
     }
 
 
