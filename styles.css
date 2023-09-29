@@ -390,7 +390,7 @@ section {
 }
 
 .case-wrapper img {
-    border-radius: 0px;
+    border-radius: 30px;
     filter: brightness(90%);
     width: 100%;
             transition: 0.5s;
@@ -421,7 +421,6 @@ section {
 
     .seksjon-wrapper.column-case {
     flex-direction: row;
-    gap: 20px;
     }
 
         .innhold-50 {
