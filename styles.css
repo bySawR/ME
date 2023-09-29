@@ -564,6 +564,19 @@ padding-right: 40px;
 min-height: 100vh;
     }
 
+    html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section.snap {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  }
+
 
 .seksjon-wrapper-notop-padding {
 display: flex;
@@ -581,8 +594,10 @@ padding-right: 40px!important;
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     backdrop-filter: blur(30px);
-    background-color: #191919 50%;
+    background-color: rgba(25, 25, 25, 0.5);
     z-index: 1;
 }
 
@@ -906,9 +921,4 @@ cursor: pointer;
 .align-center-flex {
     display: flex!important;
         align-items: center!important;
-}
-
-h1.cords {
-    font-size: max(1.4vw, 20px)!important;
-            color: rgb(65 65 65 / 75%)!important;
 }
