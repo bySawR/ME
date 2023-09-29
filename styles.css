@@ -732,6 +732,11 @@ font-size: 32px;
   color: black;
 }
 
+.digdir-section .header {
+  background-color: white;
+  color: black;
+}
+
 h1.subtitle-meta {
     font-size: 14px;
     line-height: 18px;
