@@ -834,11 +834,11 @@ cursor: pointer;
       display: inline-block;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 15px;
       white-space: nowrap;
       overflow: hidden;
-      font-size: 72px!important;
-      line-height: 96px;
+      font-size: 5vw!important;
+      line-height: 84px;
     }
     
     .text-container span {
