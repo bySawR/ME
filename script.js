@@ -154,6 +154,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
     // JavaScript to create the typewriter effect and change the text
     const textElement = document.getElementById('typewriter');
     const name1 = "Digitaliseringsdirektoratet";
