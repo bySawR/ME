@@ -663,7 +663,7 @@ padding-right: 40px!important;
 }
 
 .footer a {
-    color: rgb(65 65 65 / 75%)!important;
+    color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -837,8 +837,8 @@ cursor: pointer;
       gap: 10px;
       white-space: nowrap;
       overflow: hidden;
-      font-size: 60px!important;
-      line-height: 72px;
+      font-size: 72px!important;
+      line-height: 96px;
     }
     
     .text-container span {
