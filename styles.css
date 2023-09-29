@@ -3,7 +3,7 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'HelveticaNow';
+    --brandfont: 'Space Grotesk', sans-serif;
     --green: #98fa00;
     --darkgrey: #191919;
 }
@@ -13,6 +13,8 @@
   src: url('fonts/HelveticaNowDisplay-Regular.woff') format('woff');
   /* Add more src lines if you have different font file formats */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=block');
 
 @font-face {
   font-family: 'Machina';
