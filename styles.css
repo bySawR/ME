@@ -3,7 +3,7 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'HelveticaNow', sans-serif;
+    --brandfont: 'HelveticaNow';
     --green: #98fa00;
     --darkgrey: #191919;
 }
@@ -806,6 +806,10 @@ left: 5px;
     padding-top: 0vh!important;
 }
 
+.padding-top-10 {
+    padding-top: 5vh!important;
+}
+
 .email-button p {
     padding: 30px;
     padding-right: 60px;
@@ -834,11 +838,10 @@ cursor: pointer;
       display: inline-block;
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 12px;
       white-space: nowrap;
-      overflow: hidden;
-      font-size: 5vw!important;
-      line-height: 84px;
+      font-size: 72px!important;
+      line-height: 76px;
     }
     
     .text-container span {
