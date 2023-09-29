@@ -381,7 +381,10 @@ section {
 }
 
 .case-wrapper {
+    /*
     width: calc(50% - 20px);
+    */
+    width: 100%;
             transition: 0.5s;
 }
 
@@ -416,7 +419,8 @@ section {
 
 
     .seksjon-wrapper.column-case {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
     }
 
         .innhold-50 {
