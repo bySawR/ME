@@ -3,7 +3,7 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'Space Grotesk', sans-serif;
+    --brandfont: 'HelveticaNow';
     --green: #98fa00;
     --darkgrey: #191919;
 }
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Machina';
-  src: url('fonts/NeueMachina-Regular.woff') format('woff');
+  src: url('fonts/NeueMachina-Light.woff') format('woff');
   /* Add more src lines if you have different font file formats */
 }
 
@@ -892,4 +892,13 @@ cursor: pointer;
   position: fixed;
   top: 0;
   width: 100%
+}
+
+.sticky .seksjon-wrapper {
+  padding-top: 102px;
+}
+
+.align-center-flex {
+    display: flex!important;
+        align-items: center!important;
 }
