@@ -568,15 +568,6 @@ min-height: 100vh;
   block-size: 100%;
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
-
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  }
-
 
 .seksjon-wrapper-notop-padding {
 display: flex;
