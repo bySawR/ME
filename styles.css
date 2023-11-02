@@ -3,7 +3,7 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'HelveticaNow';
+    --brandfont: 'Poppins';
     --green: #98fa00;
     --darkgrey: #191919;
 }
@@ -15,6 +15,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=block');
 
 @font-face {
   font-family: 'Machina';
@@ -719,15 +720,15 @@ font-size: 32px;
 }
 
 h1.subtitle-meta {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 30px;
+    line-height: 38px;
     font-weight: 300!important;
     padding-bottom: 30px;
 }
 
 h1.subtitle-meta-client {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 30px;
+    line-height: 38px;
     font-weight: 300!important;
     padding-bottom: 50px;
 }

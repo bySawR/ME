@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let isDeleting = false;
     let nameIndex = 0;
     let charIndex = 0;
-    let typingSpeed = 80;
+    let typingSpeed = 60;
 
     textElement.textContent = ''; // Initialize with an empty string
 
