@@ -3,7 +3,7 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'Poppins';
+    --brandfont: 'Galano Grotesque Light';
     --green: #98fa00;
     --darkgrey: #191919;
 }
@@ -18,10 +18,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=block');
 
 @font-face {
-  font-family: 'Machina';
-  src: url('fonts/NeueMachina-Light.woff') format('woff');
-  /* Add more src lines if you have different font file formats */
+  font-family: 'Galano Grotesque Light';
+  src: url('fonts/GalanoGrotesque-Light.woff') format('woff');
+  font-weight: 300;
 }
+
+@font-face {
+  font-family: 'Galano Grotesque Heavy';
+  src: url('fonts/GalanoGrotesque-Heavy.woff') format('woff');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque Medium';
+  src: url('fonts/GalanoGrotesque-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Galano Grotesque SemiBold';
+  src: url('fonts/GalanoGrotesque-SemiBold.woff') format('woff');
+  font-weight: 600;
+}
+
 
 .small-padding {
 height: 70vh!important;
