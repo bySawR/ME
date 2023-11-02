@@ -142,13 +142,13 @@ min-width: 15vw;
 }
 
 ::selection {
-     background-color: var(--green);
-     color: var(--black);
+     background-color: var(--darkgrey);
+     color: var(--white);
 }
 
 ::-moz-selection {
-     background-color: var(--green);
-     color: var(--black);
+     background-color: var(--darkgrey);
+     color: var(--white);
 }
 
 @media (max-width: 1050px) {
