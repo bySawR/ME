@@ -3,7 +3,7 @@
     --black: #121211;
     --white: #ffffff;
     --blue: #0079FF;
-    --brandfont: 'Galano Grotesque Light';
+    --brandfont: 'Poppins';
     --green: #98fa00;
     --darkgrey: #191919;
 }
@@ -16,29 +16,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=block');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=block');
+
 
 @font-face {
-  font-family: 'Galano Grotesque Light';
-  src: url('fonts/GalanoGrotesque-Light.woff') format('woff');
+  font-family: 'NeuePower';
+  src: url('fonts/NeuePower-Regular.woff') format('woff');
   font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Galano Grotesque Heavy';
-  src: url('fonts/GalanoGrotesque-Heavy.woff') format('woff');
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'Galano Grotesque Medium';
-  src: url('fonts/GalanoGrotesque-Medium.woff') format('woff');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Galano Grotesque SemiBold';
-  src: url('fonts/GalanoGrotesque-SemiBold.woff') format('woff');
-  font-weight: 600;
 }
 
 
@@ -82,7 +66,7 @@ html {
 
 * {
 font-family: var(--brandfont)!important;
-font-weight: 400!important;
+font-weight: 300!important;
 text-underline-offset: 8px;
 letter-spacing: 0px;
 }
@@ -243,7 +227,7 @@ body::-webkit-scrollbar {
 /* Global styles */
 body {
     font-family: var(--brandfont), sans-serif;
-  background: #191919;
+  background: black;
   color: white;
 }
 
@@ -608,7 +592,7 @@ padding-right: 40px!important;
     padding-top: 20px;
     padding-bottom: 20px;
     backdrop-filter: blur(30px);
-    background-color: rgba(25, 25, 25, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -698,7 +682,7 @@ padding-right: 40px!important;
     display: flex;
     flex-direction: row;
     color: white;
-    background: #191919;
+    background: black;
 }
 
 .footer a {
@@ -739,15 +723,15 @@ font-size: 32px;
 }
 
 h1.subtitle-meta {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300!important;
     padding-bottom: 30px;
 }
 
 h1.subtitle-meta-client {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300!important;
     padding-bottom: 50px;
 }
