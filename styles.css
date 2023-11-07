@@ -18,6 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=block');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=block');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=block');
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=block');
 
 
 @font-face {
@@ -917,4 +918,9 @@ cursor: pointer;
 .align-center-flex {
     display: flex!important;
         align-items: center!important;
+}
+
+h1.frontpage-header {
+    font-size: 60px;
+color: black;
 }
