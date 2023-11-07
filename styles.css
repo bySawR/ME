@@ -183,7 +183,7 @@ min-width: 15vw;
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .tjenestelenker a {
@@ -500,7 +500,7 @@ margin: 0;
     padding-left: 20px;
     border-radius: 296px;
     background-color: rgb(65 65 65 / 30%);
-    color: white;
+    color: black;
     border: none;
     margin-bottom: 10px;
 transition: 0.3s;
@@ -550,7 +550,7 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 
 .black-section {
   background: #191919;
-  color: white;
+  color: black;
 }
 
 .green-section {
@@ -592,7 +592,7 @@ padding-right: 40px!important;
     padding-top: 20px;
     padding-bottom: 20px;
     backdrop-filter: blur(30px);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #e9e7de59;
     z-index: 1;
 }
 
@@ -603,7 +603,7 @@ padding-right: 40px!important;
 
 .header nav a:hover, a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--green);
+    text-decoration-color: black;
 }
 
 .watermark {
@@ -618,7 +618,7 @@ padding-right: 40px!important;
 .watermark a:hover {
     display: flex;
     align-items: center;
-    color: white!important;
+    color: black!important;
     transition: 0.5s;
     justify-content: center;
     text-decoration: none!important;
@@ -681,12 +681,12 @@ padding-right: 40px!important;
     min-height: 5vh;
     display: flex;
     flex-direction: row;
-    color: white;
-    background: black;
+    color: black;
+    background: #E9E7DE;
 }
 
 .footer a {
-    color: white;
+    color: black;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -784,7 +784,7 @@ height: unset;
     position: absolute;
     bottom: 15px;
     left: 15px;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: bold;
   }
@@ -811,7 +811,7 @@ left: 5px;
 }
 
 .digdir-section {
-    background-color: white;
+    background-color: black;
     color: black;
 }
 
