@@ -6,6 +6,7 @@
     --brandfont: 'Poppins';
     --green: #98fa00;
     --darkgrey: #191919;
+    --bakgrunn: #f7f3eb;
 }
 
 @font-face {
@@ -69,11 +70,13 @@ font-family: var(--brandfont)!important;
 font-weight: 300!important;
 text-underline-offset: 8px;
 letter-spacing: 0px;
+text-decoration-thickness: 1px;
 }
 
 a {
 text-underline-offset: 8px!important;
-    text-decoration-color: var(--green);
+    text-decoration-color: black;
+    text-decoration-thickness: 1px;
 }
 
 
@@ -227,7 +230,7 @@ body::-webkit-scrollbar {
 /* Global styles */
 body {
     font-family: var(--brandfont), sans-serif;
-  background: #E9E7DE;
+  background: var(--bakgrunn);
   color: black;
 }
 
@@ -591,7 +594,7 @@ padding-right: 40px!important;
     padding-top: 20px;
     padding-bottom: 20px;
     backdrop-filter: blur(30px);
-    background-color: #e9e7de59;
+    background-color: var(--bakgrunn)59;
     z-index: 1;
 }
 
@@ -603,6 +606,7 @@ padding-right: 40px!important;
 .header nav a:hover, a:hover {
     text-decoration: underline;
     text-decoration-color: black;
+    text-decoration-thickness: 1px;
 }
 
 .watermark {
@@ -681,7 +685,7 @@ padding-right: 40px!important;
     display: flex;
     flex-direction: row;
     color: black;
-    background: #E9E7DE;
+    background: var(--bakgrunn);
 }
 
 .footer a {
