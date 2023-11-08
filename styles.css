@@ -840,15 +840,19 @@ left: 5px;
 }
 
 .email-button p {
-    padding: 30px;
-    padding-right: 60px;
-    padding-left: 60px;
-    width: fit-content;
-    margin-bottom: 20px;
-    text-decoration: none!important;
-        background-color: rgb(65 65 65 / 10%);
+    text-transform: none;
+    padding: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0px;
+    background-color: transparent;
+    color: black;
+    border: none;
 transition: 0.3s;
-outline: 2px solid transparent;
+outline: 1px solid black;
+    font-size: max(0.8vw, 20px);
+    line-height: 1.4285714286;
 }
 
 .email-button p:hover {
@@ -859,7 +863,8 @@ cursor: pointer;
 
 .email-button {
     text-decoration: none!important;
-
+display: inline-flex;
+gap: 10px;
 }
 
    .text-container {
@@ -926,4 +931,10 @@ cursor: pointer;
 h1.frontpage-header {
     font-size: 60px;
 color: black;
+}
+
+.contact-portrait {
+width: 50%;
+display: flex;
+align-items: flex-start;
 }
