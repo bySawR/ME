@@ -975,5 +975,11 @@ nav.nav-wrapper {
 }
 
 .mockup-50 {
-    width: 50%;
+    width: calc(50% - 20px);
+}
+
+.seksjon-nopadding {
+padding: 20px;
+display: flex;
+    justify-content: space-between;
 }
