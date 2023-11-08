@@ -702,6 +702,9 @@ gap: 50px;
 .header-text {
     display: none;
 }
+.contact-portrait {
+    width: 100%;
+}
 }
 
 .footer h1.subtitle {
