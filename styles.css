@@ -272,6 +272,10 @@ h1 {
 font-size: max(10.1333333333vw, 38px)
 }
 
+img {
+    border-radius: 5px;
+}
+
 h1.subtitle-meta {
     font-size: 40px!important;
     line-height: 56px!important;
@@ -555,7 +559,7 @@ margin-top: 5px;
     }
 
 .filter-tags button.selected {
-  outline: 1px solid black;
+  outline: 2px solid black;
       background-color: rgb(65 65 65 / 30%);
 transition: outline 0s; /* Set the transition for outline to 0s */
 }
