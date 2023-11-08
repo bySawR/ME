@@ -251,7 +251,7 @@ h1.subtitle {
 }
 
 .subtitle-double {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 @media only screen and (max-width: 1024px) {
