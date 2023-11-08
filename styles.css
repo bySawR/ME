@@ -288,12 +288,16 @@ h1.subtitle-meta-client {
 }
     }
 
+nav.nav-wrapper {
+    width: 25%;
+    display: flex;
+    align-items: flex-end;
+}
+
 nav {
 display: flex;
     gap: 0px;
     flex-direction: column;
-    width: 25%;
-    align-items: flex-end;
 }
 
 .header a, .header-text {
