@@ -259,7 +259,7 @@ font-size: max(5.3333333333vw, 20px);
     font-size: 42px;
 }
 
-.header a {
+.header a, .header-text {
     font-size: 42px!important;
     line-height: 60px!important;
 }
@@ -281,13 +281,18 @@ h1.subtitle-meta-client {
     }
 
 nav {
-    display: flex;
-    gap: 30px;
+display: flex;
+    gap: 0px;
+    flex-direction: column;
 }
 
-.header a {
+.header a, .header-text {
     font-size: max(1.4vw, 20px);
     line-height: 1.4285714286;
+}
+
+.header-text {
+    width: 40%;
 }
 
 
@@ -585,13 +590,12 @@ padding-right: 20px!important;
     .header{
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    backdrop-filter: blur(30px);
     background-color: var(--bakgrunn)59;
     z-index: 1;
 }
