@@ -273,7 +273,7 @@ font-size: max(10.1333333333vw, 38px)
 }
 
 img {
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 h1.subtitle-meta {
