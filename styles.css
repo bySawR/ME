@@ -699,6 +699,9 @@ padding-right: 20px!important;
 flex-direction: column;
 gap: 50px;
 }
+.header-text {
+    display: none;
+}
 }
 
 .footer h1.subtitle {
