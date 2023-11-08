@@ -469,8 +469,8 @@ main a.case-wrapper a:before {
     flex-direction: column!important;
     padding-top: 0vh!important;
     padding-bottom: 10vh!important;
-    padding-left: 40px!important;
-    padding-right: 40px!important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
     height: unset!important;
     gap: 50px!important;
 }
