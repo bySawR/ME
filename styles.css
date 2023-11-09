@@ -971,7 +971,7 @@ nav.nav-wrapper {
 }
 
 .mockup-25 {
-    width: 25%;
+    width: calc(25% - 20px);
 }
 
 .mockup-50 {
