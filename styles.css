@@ -6,7 +6,7 @@
     --brandfont: 'PPRadio';
     --green: #98fa00;
     --darkgrey: #191919;
-    --bakgrunn: #fffbe3;
+    --bakgrunn: white;
 }
 
 @font-face {
@@ -70,7 +70,7 @@ html {
 font-family: var(--brandfont)!important;
 font-weight: 300!important;
 text-underline-offset: 5px;
-letter-spacing: 0px;
+letter-spacing: -0.5px;
 text-decoration-thickness: 1px;
 }
 
