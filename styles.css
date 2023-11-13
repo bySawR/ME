@@ -15,6 +15,12 @@
   /* Add more src lines if you have different font file formats */
 }
 
+@font-face {
+  font-family: 'HelveticaNow';
+  src: url('fonts/HelveticaNowDisplay-Regular.woff') format('woff');
+  /* Add more src lines if you have different font file formats */
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=block');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=block');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=block');
