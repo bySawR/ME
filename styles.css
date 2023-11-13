@@ -70,7 +70,7 @@ html {
 font-family: var(--brandfont)!important;
 font-weight: 300!important;
 text-underline-offset: 5px;
-letter-spacing: -0.5px;
+letter-spacing: 0px;
 text-decoration-thickness: 1px;
 }
 
@@ -533,6 +533,7 @@ outline: 1px solid black;
 
 .filter-tags {
     display: inline-flex;
+    flex-direction: column;
     gap: 10px;
     position: sticky;
     top: 80px;
@@ -555,12 +556,16 @@ button.active.active-tag {
 
 @media only screen and (max-width: 1024px) {
     .filter-tags button {
-    font-size: 42px!important;
-    line-height: 60px!important;
+    font-size: 24px!important;
+    line-height: 36px!important;
         margin-bottom: 5px;
 margin-top: 5px;
+padding: 10px;
 }
+.filter-tags {
+        flex-direction: row;
     }
+}
 
 .filter-tags button.selected {
   outline: 2px solid black;
