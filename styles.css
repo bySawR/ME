@@ -1008,3 +1008,25 @@ display: flex;
     transition: 0.1s ease-in-out;
     text-decoration: none!important;
 }
+
+.liste-wrapper {
+display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.liste-item-wrapper {
+    width: calc(30% - 20px);
+}
+
+.liste-tall {
+    font-size: 30px;
+}
+
+.liste-heading {
+    font-size: 30px;
+}
