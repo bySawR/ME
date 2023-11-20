@@ -209,3 +209,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(type, 1000);
 
+// Get the element that will display the year
+const yearCounter = document.getElementById('yearCounter');
+
+// Set the starting year
+let currentYear = 1999;
+
+// Function to update the year and restart the animation
+function updateYear() {
+  // Update the displayed year
+  yearCounter.textContent = `/ ${currentYear}`;
+
+  // Increment the year
+  currentYear++;
+
+  // If the current year exceeds the current real year, reset to the starting year
+  if (currentYear > new Date().getFullYear()) {
+    currentYear = 1999;
+  }
+}
+
+// Update the year every second (you can adjust the interval as needed)
+setInterval(updateYear, 300);
