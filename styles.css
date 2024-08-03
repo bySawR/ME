@@ -103,6 +103,11 @@ p {
   line-height: 24px;
 }
 
+.bio {
+  font-size: 36px;
+  line-height: 40px;
+}
+
 .project {
   display: flex;
   align-items: center;
@@ -270,10 +275,18 @@ p {
     min-width: auto;
   }
 
+  body {
+    overflow-y: visible;
+  }
+
   .fade-in-right {
     -webkit-animation: fade-in-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1)
       0.3s both;
     animation: fade-in-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
+  }
+
+  .footer {
+    display: none;
   }
 }
 
