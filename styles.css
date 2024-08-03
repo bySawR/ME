@@ -109,7 +109,7 @@ span {
 
 .bio {
   font-size: 2.6em;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 .project {
@@ -270,11 +270,21 @@ span {
   outline: 1px solid black;
 }
 
+.intro-column {
+  min-width: 700px!important;
+}
+
+
 @media (max-width: 1200px) {
   .wrapper img {
     margin-top: 24px;
     margin-bottom: 24px;
   }
+
+  .intro-column {
+    min-width: unset!important;
+  }
+  
 
   .column {
     flex: 1 1 50%;
@@ -350,6 +360,3 @@ span {
   }
 }
 
-.intro-column {
-  min-width: 700px!important;
-}
