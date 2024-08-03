@@ -186,6 +186,15 @@ p {
   transition: 0.6s ease;
 }
 
+.footer {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  cursor: none;
+  width: 150px;
+  transition: 0.6s ease;
+}
+
 .barcode img:hover {
   rotate: 7deg;
 }
