@@ -40,7 +40,12 @@ h2 {
 }
 
 .logo-wrapper-single img {
+  width: 100px;
   margin-bottom: 20px;
+}
+
+.logo-wrapper-single a:before {
+  content: "";
 }
 
 .container {
