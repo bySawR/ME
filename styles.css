@@ -519,7 +519,7 @@ line-height: 1.6em;
 }
 
 @media (max-width: 1024px) {
-  .container, .content, .hero, .footer, #contact-page, .services-list {
+  .container, .content, .hero, .footer, #contact-page {
       padding: 24px;
       max-width: unset;
   }
