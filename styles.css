@@ -220,6 +220,7 @@ video {
   position: relative;
   display: block; /* Ensure the link spans the entire menu item */
   padding: 1rem; /* Add padding for better clickable area */
+  padding-left: 1.5em;
   overflow: hidden; /* Prevent any overflow caused by the pseudo-element */
 }
 
@@ -518,7 +519,7 @@ line-height: 1.6em;
 }
 
 @media (max-width: 1024px) {
-  .container, .content, .hero, .footer {
+  .container, .content, .hero, .footer, #contact-page, .services-list {
       padding: 24px;
       max-width: unset;
   }
@@ -526,7 +527,7 @@ line-height: 1.6em;
     padding: unset;
   }
 .content {
-  min-height: 100vh;
+  min-height: unset;
 }
 
 #logo-reveal {
@@ -564,5 +565,8 @@ section {
 }
 #image-double {
   flex-direction: column;
+}
+.contact-card {
+flex-direction: column-reverse;
 }
 }
