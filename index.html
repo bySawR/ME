@@ -1,98 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARCUS ✦ EVENSEN</title>
+    <title>Marcus Evensen</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=block" rel="stylesheet">
+    <script src="fade-in.js"></script>
 </head>
 
-<body>
-    <div class="logo-wrapper fade-in-left">
-        <a href="https://marcusevensen.no/"></a><img src="assets/Marcus Evensen.svg" alt="Marcus Evensen Logo"></a>
+<body class="yellow">
+    <header>
+        <div class="container">
+            <a href="/" class="logo">Marcus Evensen</a>
+            <button class="menu-button" aria-label="Åpne meny" id="menuButton">
+                Meny
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="menu-icon">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="side-menu" id="sideMenu">
+        <button class="close-button" aria-label="Lukk meny" id="closeButton">&times;</button>
+        <ul class="menu-items">
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="/#prosjekter">Prosjekter</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
     </div>
-    <div class="container">
-
-        <div class="column intro-column fade-in-right">
-            <h2>Introduksjon ✦</h2>
-            <p class="bio">Grafisk designer og utvikler som jobber med bedrifter for å skape deres
-                identiteter, fortelle visuelle historier og bygge digitale produkter.</p>
-        </div>
-        <div class="column fade-in-right">
-            <h2>Kontakt ✦</h2>
-            <p><a href="mailto:hei@marcusevensen.no">hei@marcusevensen.no</a></p>
-            <h2>SOSIALE MEDIER ✦</h2>
-            <p><a href="https://www.instagram.com/marcusaevensen">Instagram</a></p>
-            <p><a href="https://www.linkedin.com/in/marcusevensen/">LinkedIn</a></p>
-            <h2>EN DEL AV ✦</h2>
-            <p><a href="https://aptere.no/">Aptere</a></p>
-            <p><a href="https://studiogeist.no/">Studiogeist</a></p>
-            <h2>Priser ✦</h2>
-            <p>Gull Farmandprisen X1<br>
-                Bronse Farmandprisen X2</p>
-        </div>
-
-        <div class="column fade-in-right">
-            <h2>Arbeid ✦</h2>
-            <div class="project">
-                <p><a href="/digdir">Digdir</a></p>
-                <div class="category">Visuell identitet</div>
+    <div class="hero">Jeg lager løsninger som får deg til å lykkes<br>– fra idé til gjennomføring.
+    </div>
+    <div class="content">
+        <div class="project-list" id="prosjekter">
+            <div class="project-wrapper">
+                <a href="/prosjekter/digdir.html">
+                    <video src="/prosjekter/digdir/Digdir Animasjon.webm" class="square" autoplay muted loop
+                        loading="lazy" preload="metadata"></video>
+                    <div class="project-title">Digdir</div>
+                </a>
             </div>
-            <div class="project">
-                <p><a href="/">0x7d8e3a14</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x1a9c6b4f</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x8f2e7d51</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x3b6f2a98</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x5e9a4c71</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x9d4f8e3c</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x2c8d5a92</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x7f3e1b8d</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x4a7c9d21</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-            <div class="project">
-                <p><a href="/">0x5f8e3b4d</a></p>
-                <div class="category">Ukjent</div>
-            </div>
-
-
         </div>
     </div>
-    <div class="barcode">
-        <img src="assets/BARCODE.svg">
-    </div>
-    <div class="footer fade-in-left">
-        <span>✦ 1999</span>
-    </div>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-top">
+                <a href="/kontakt" class="footer-cta">
+                    La oss lage noe kult sammen!
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Marcus Evensen</p>
+                    <p>hei@marcusevensen.no</p>
+                    <p>+47 92 22 03 96</p>
+                    <p><strong>Lokasjon</strong></p>
+                    <p>Oslo, Norge</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Hva jeg kan hjelpe med</h3>
+                    <p>Nettutvikling</p>
+                    <p>Grafisk design</p>
+                    <p>Merkevarebygging</p>
+                    <p>UI-design</a>
+                </div>
+
+
+                <div class="footer-section">
+                    <h3>Priser</h3>
+                    <p>Gull Farmandprisen X1</p>
+                    <p>Bronse Farmandprisen X2</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <span>&copy; 2024 Marcus Evensen</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/marcusevensen/" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/marcusaevensen" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
-</html>
+<script src=" meny.js"></script>

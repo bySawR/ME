@@ -1,362 +1,513 @@
 :root {
-  --brandfont: "BRAND";
-  --brandfarge: yellow;
-  --brandfarge2: #e30613;
+  --yellow: #ecf47a;
+  --orange: #ffc555;
+  --pink: #ff8aef;
+  --green: #beff8b;
+  --white: #f3f3f3;
+  --black: #000000;
+  --beige: #ccc4af;
+  --digdir-theme: #ffd9da;
 }
 
-@font-face {
-  font-family: "BRAND";
-  src: url("assets/BionixFat-vnmEM.woff") format("woff");
-  /* Add more src lines if you have different font file formats */
+.white {
+  background: white;
 }
 
-body {
-  background-color: var(--brandfarge);
-  font-family: monospace;
-  padding: 0;
-  margin: 20px;
-  overflow: hidden;
-  max-height: 100vh;
+.digdir-theme {
+  background-color: var(--digdir-theme);
 }
 
-.digdir {
-  background-color: var(--brandfarge2);
-  overflow-y: visible;
-  min-height: 100vh;
+.yellow {
+  background-color: var(--yellow);
+  color: var(--black);
 }
 
-h2 {
-  font-weight: 800 !important;
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin-top: 24px !important;
-  margin-bottom: 4px;
-  text-transform: uppercase;
+.orange {
+  background-color: var(--orange);
+  color: var(--black);
 }
 
-.logo-wrapper img {
-  width: 100%;
-  margin-bottom: 20px;
+.pink {
+  background-color: var(--pink);
+  color: var(--black);
 }
 
-.logo-wrapper-single img {
-  width: 100px;
-  margin-bottom: 20px;
+.green {
+  background-color: var(--green);
+  color: var(--black);
 }
 
-.logo-wrapper-single a:before {
-  content: "";
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0px;
-}
-
-.column {
-  flex: 1;
-  min-width: 200px; /* Ensures columns don't get too narrow */
-}
-
-.column h2 {
-  margin-top: 0;
-}
-
-a {
-  text-decoration-style: dashed;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-  color: inherit;
-  transition: 0.4s;
-  position: relative; /* Necessary for the pseudo-element positioning */
-}
-
-a:hover {
-  color: blue;
-}
-
-a:before {
-  content: "→";
-  display: inline-block;
-  transform: scale(0);
-  transition: transform 0.3s ease;
-  position: absolute;
-  left: -1.2em; /* Adjust this value to position the arrow as needed */
-}
-a:hover:before {
-  transform: scale(1.5);
-  transition: transform 0.3s ease;
-}
-
-a:active:before {
-  margin-left: 10px;
-  transition: 0.3s ease;
-}
-
-p {
-  padding: 0;
-  margin-bottom: 8px !important;
-  margin: 0;
-  font-size: 1.6em;
-  line-height: 1.2em;
-}
-
-span {
-  font-size: 1.6em;
-}
-
-.bio {
-  font-size: 2.6em;
-  line-height: 1.2em;
-}
-
-.project {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 8px;
-}
-
-.category {
-  outline: 1px solid black;
-  padding: 4px 8px;
-  border-radius: 400px;
-}
-
-.fade-in-left {
-  -webkit-animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-@-webkit-keyframes fade-in-left {
-  0% {
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-left {
-  0% {
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.fade-in-right {
-  -webkit-animation: fade-in-right 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s
-    both;
-  animation: fade-in-right 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
-}
-
-@-webkit-keyframes fade-in-right {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-right {
-  0% {
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.barcode img {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  cursor: none;
-  width: 100px;
-  transition: 0.6s ease;
-}
-
-.footer {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  cursor: none;
-  width: 150px;
-  transition: 0.6s ease;
-  padding: 0;
-  margin: 0;
-}
-
-.barcode img:hover {
-  rotate: 7deg;
+.beige {
+  background-color: var(--beige);
+  color: var(--black);
 }
 
 * {
-  cursor: url("assets/cursor.svg") 0 0, auto !important;
-  transition: transform 0.3s ease, mix-blend-mode 0.3s ease;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: -0.5px;
 }
 
-.logo-wrapper img:hover {
-  opacity: 0.5;
-  transition: 0.5s ease-in-out;
+header {
+  font-size: 2rem;
+  max-width: 100vw;
+  padding: 24px 64px;
 }
 
-.logo-wrapper img {
-  transition: 0.5s ease-in-out;
+img,
+video {
+  overflow: hidden;
+  object-fit: cover;
 }
 
-.logo-wrapper-single img:hover {
-  opacity: 0.5;
-  transition: 0.5s ease-in-out;
+body {
+  background-color: inherit;
+  color: inherit;
+  margin: 0 auto;
 }
 
-.logo-wrapper-single img {
-  transition: 0.5s ease-in-out;
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.wrapper {
+.content {
+  display: flex; /* Makes the container a flex container */
+  justify-content: center; /* Optional: centers the content horizontally */
+  min-height: 100vh;
+  padding: 48px 64px;
+}
+
+.case-content {
+  display: flex; /* Makes the container a flex container */
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 48px 64px;
+}
+
+#contact-page {
+  padding: 48px 64px;
+  display: flex;
+}
+
+.contact-card {
+  display: flex;
+}
+
+.contact-card img {
   width: 100%;
 }
 
-.wrapper img {
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
   width: 100%;
-  margin-top: 48px;
-  margin-bottom: 48px;
-  outline: 1px solid black;
 }
 
-.wrapper-right {
+.contact-text p, .contact-text a {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+    line-height: 1.6em;
+}
+
+.contact-text h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.hero {
+  display: flex; /* Makes the container a flex container */
+  padding: 24px 64px;
+  font-size: 3rem;
+  align-items: flex-end;
+}
+
+.project-list {
+  display: flex; /* This makes the project items inside flex */
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.project-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset position */
+}
+
+.project-wrapper {
+  flex: calc(50% - 36px);
+  opacity: 0; /* Initially invisible */
+  transform: translateY(
+    50px
+  ); /* Slightly offset to make the fade-in more noticeable */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Fade-in/out and slide effect */
+}
+
+.project-wrapper img,
+video {
+  width: 100%;
+}
+
+.project-title {
+  font-size: 1.5rem; /* Optional: adjust font size */
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--black);
+}
+.menu-button {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
 }
-
-.wrapper-right img {
-  width: 60%;
-  text-align: right;
-  margin-top: 48px;
-  margin-bottom: 48px;
-  outline: 1px solid black;
+.menu-button:hover {
+  opacity: 0.7;
 }
-
-.wrapper-left {
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100%;
+  background-color: var(--pink);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+.side-menu.open {
+  right: 0;
+}
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.menu-items {
+  list-style-type: none;
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0em;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
 }
 
-.wrapper-left img {
-  width: 60%;
-  text-align: right;
-  margin-top: 48px;
-  margin-bottom: 48px;
-  outline: 1px solid black;
+.menu-items a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2rem;
+  position: relative;
+  display: block; /* Ensure the link spans the entire menu item */
+  padding: 1rem; /* Add padding for better clickable area */
+  overflow: hidden; /* Prevent any overflow caused by the pseudo-element */
 }
 
-.intro-column {
-  min-width: 700px!important;
+.menu-items a:hover {
+  color: var(--black); /* Change text color if needed */
 }
 
+.menu-items a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start outside the view */
+  width: 100%;
+  height: 100%;
+  background-color: var(--green); /* Rectangle color */
+  background-size: 1.1em 1.1em; /* Adjust size of the SVG */
+  background-repeat: no-repeat;
+  background-position: right 1rem center; /* Adjust SVG position */
+  z-index: -1; /* Place the rectangle behind the text */
+  transition: left 0.4s ease; /* Smooth animation */
+}
 
-@media (max-width: 1200px) {
-  .wrapper img {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
+.menu-items a:hover::after {
+  left: 0; /* Slide in to cover the entire menu item */
+}
 
-  .intro-column {
-    min-width: unset!important;
-  }
-  
+/* Footer styles */
+.footer {
+  background-color: inherit;
+  padding: 48px 64px;
+  color: var(--black);
+}
 
-  .column {
-    flex: 1 1 50%;
-    min-width: auto;
-  }
+.footer-top {
+  margin-bottom: 64px;
+}
 
-  body {
-    overflow-y: visible;
-  }
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  transform: rotate(-8deg);
+  display: inline-block;
+  margin-bottom: 24px;
+}
 
-  .fade-in-right {
-    -webkit-animation: fade-in-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1)
-      0.3s both;
-    animation: fade-in-right 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
-  }
+.footer-cta {
+  display: inline-flex;
+  align-items: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--black);
+  transition: opacity 0.3s;
+}
 
-  .footer {
-    display: none;
-  }
+.footer-cta:hover {
+  opacity: 0.7;
+}
 
-  p a {
-    font-size: 18px !important;
-  }
+.footer-cta svg {
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.footer-cta:hover svg {
+  transform: translateX(4px);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.footer-section h3 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-section p,
+.footer-section a {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-section a:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-legal a,
+.footer-legal span {
+  font-size: 0.875rem;
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-legal a:hover {
+  opacity: 0.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a {
+  color: var(--black);
+  transition: opacity 0.3s;
+}
+
+.footer-social a:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
-  .column {
-    flex: 1 1 100%;
-    min-width: auto;
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  h2 {
-    font-size: 14px; /* Smaller font size for smaller screens */
-    letter-spacing: 1px; /* Reduced letter spacing */
-  }
-
-  p {
-    font-size: 18px; /* Smaller font size for paragraphs */
-    line-height: 20px;
-  }
-
-  .barcode img {
-    width: 100px; /* Adjusted for smaller screens */
-  }
-
-  .wrapper img {
+  .footer-social {
     margin-top: 16px;
-    margin-bottom: 16px;
+  }
+  .project-wrapper {
+    flex: 100%;
+  }
+  .content,
+  header,
+  .hero,
+  .footer {
+    padding: 24px;
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    margin: 10px; /* Reduced margin for very small screens */
-  }
 
-  .container {
-    padding: 0 5px;
-  }
-
-  h2 {
-    font-size: 12px; /* Even smaller font size for very small screens */
-    letter-spacing: 0.5px; /* Further reduced letter spacing */
-  }
-
-  p {
-    font-size: 16px; /* Smaller font size for paragraphs */
-    line-height: 18px;
-  }
-
-  .barcode img {
-    width: 80px; /* Further adjusted for very small screens */
-  }
+.fullwidth img {
+  width: 100%;
+  padding: 0!important;
+  margin-bottom: -10px!important;
 }
 
+.case-content .fullwidth {
+  padding: 0px!important;
+}
+
+
+section {
+  min-height: 100vh;
+  margin: 0;
+}
+
+section img, video {
+  width: 100%;
+  padding: 0;
+}
+
+.column-50 {
+  width: 50%;
+}
+
+.column-50 img {
+  width: 100%;
+}
+
+#losning, #konsept {
+  display: flex;
+  align-items: center;
+}
+
+#logo-reveal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.project-desc {
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+.column-100 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-text {
+  font-size: 2.5em;
+  line-height: 1.6em;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+#image-double {
+display: flex;
+gap: 48px;
+}
+
+
+#image-double img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  }
+
+
+#single-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  #info {
+    display: flex;
+    gap: 24px;
+  }
+
+  .intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .info-outer {
+    font-size: 1.4em;
+    line-height: 1.6em;
+    width: 60%;
+  }
+
+  .project-h2 {
+    padding: 0;
+    font-weight: 400;
+    margin: 0;
+  }
+
+ .case-title {
+  font-size: 2.4em;
+  line-height: 1.6em;
+  margin: 0;
+  font-weight: 600;
+  }
+
+  .services-list {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+  }
+
+  .service-item {
+flex: calc(45% - 64px);
+padding: 48px;
+border: 1px solid black;
+font-size: 1.4em;
+line-height: 1.6em;
+  }
+
+  /* Components */
+.menu-button:hover, .footer-cta:hover, .menu-items a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .container, .content, .header, .hero, .footer {
+      padding: 24px;
+      max-width: unset;
+  }
+}
