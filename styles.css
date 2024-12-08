@@ -506,8 +506,51 @@ line-height: 1.6em;
 }
 
 @media (max-width: 1024px) {
-  .container, .content, .header, .hero, .footer {
+  .container, .content, .hero, .footer {
       padding: 24px;
       max-width: unset;
   }
+  header {
+    padding: unset;
+  }
+.content {
+  min-height: 100vh;
+}
+
+#logo-reveal {
+  min-height: unset;
+}
+#info {
+  flex-direction: column;
+}
+.intro-wrapper, .info-outer {
+  width: 100%;
+}
+#losning, #konsept {
+  flex-direction: column;
+  justify-content: center;
+}
+.column-50 {
+  width: 100%;
+}
+#konsept {
+  flex-direction: column-reverse;
+}
+section {
+  min-height: 50vh;
+}
+.quote-text {
+  font-size: 1.8em;
+  width: 100%;
+  min-height: 50vh;
+}
+
+#quote {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#image-double {
+  flex-direction: column;
+}
 }
