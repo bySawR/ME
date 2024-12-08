@@ -389,6 +389,14 @@ video {
 section {
   min-height: 100vh;
   margin: 0;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(50px); /* Slightly offset to make the fade-in more noticeable */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Fade-in/out and slide effect */
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset position */
 }
 
 section img, video {
@@ -498,6 +506,10 @@ padding: 48px;
 border: 1px solid black;
 font-size: 1.4em;
 line-height: 1.6em;
+  }
+
+  .service-item h2 {
+    font-weight: 500;
   }
 
   /* Components */

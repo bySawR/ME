@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Set up the IntersectionObserver to detect when project-wrapper enters or leaves the viewport
+    // Set up the IntersectionObserver to detect when elements enter or leave the viewport
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            // Check if the project-wrapper is intersecting (in the viewport)
+            // Check if the element is intersecting (in the viewport)
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible'); // Add 'visible' class to fade in
             } else {
@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, {
-        threshold: 0.2, // Trigger when 50% of the element is in the viewport
+        threshold: 0.2, // Trigger when 20% of the element is in the viewport
     });
 
-    // Target all .project-wrapper elements for observation
-    const projectWrappers = document.querySelectorAll('.project-wrapper');
-    projectWrappers.forEach(wrapper => {
-        observer.observe(wrapper);
+    // Target all .project-wrapper and <section> elements for observation
+    const elementsToObserve = document.querySelectorAll('.project-wrapper, section');
+    elementsToObserve.forEach(element => {
+        observer.observe(element);
     });
 });
