@@ -569,4 +569,7 @@ section {
 .contact-card {
 flex-direction: column-reverse;
 }
+.side-menu {
+  width: 100%;
+}
 }
