@@ -47,6 +47,10 @@
   letter-spacing: -0.5px;
 }
 
+a, button {
+  color: inherit;
+}
+
 header {
   font-size: 2rem;
   max-width: 100vw;
