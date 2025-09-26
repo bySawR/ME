@@ -80,14 +80,14 @@ a {
   display: flex; /* Makes the container a flex container */
   justify-content: center; /* Optional: centers the content horizontally */
   min-height: 100vh;
-  padding: 48px 64px;
+  padding: 24px 64px;
 }
 
 .case-content {
   display: flex; /* Makes the container a flex container */
   flex-direction: column;
   min-height: 100vh;
-  padding: 48px 64px;
+  padding: 24px 64px;
 }
 
 #contact-page {
@@ -111,11 +111,12 @@ a {
   width: 100%;
 }
 
-.contact-text p, .contact-text a {
+.contact-text p,
+.contact-text a {
   padding: 0;
   margin: 0;
   font-size: 2rem;
-    line-height: 1.6em;
+  line-height: 1.6em;
 }
 
 .contact-text h2 {
@@ -377,23 +378,23 @@ video {
   }
 }
 
-
 .fullwidth img {
   width: 100%;
-  padding: 0!important;
-  margin-bottom: -10px!important;
+  padding: 0 !important;
+  margin-bottom: -10px !important;
 }
 
 .case-content .fullwidth {
-  padding: 0px!important;
+  padding: 0px !important;
 }
-
 
 section {
   min-height: 100vh;
   margin: 0;
   opacity: 0; /* Initially invisible */
-  transform: translateY(50px); /* Slightly offset to make the fade-in more noticeable */
+  transform: translateY(
+    50px
+  ); /* Slightly offset to make the fade-in more noticeable */
   transition: opacity 0.8s ease, transform 0.8s ease; /* Fade-in/out and slide effect */
 }
 
@@ -402,7 +403,8 @@ section.visible {
   transform: translateY(0); /* Reset position */
 }
 
-section img, video {
+section img,
+video {
   width: 100%;
   padding: 0;
 }
@@ -415,7 +417,8 @@ section img, video {
   width: 100%;
 }
 
-#losning, #konsept {
+#losning,
+#konsept {
   display: flex;
   align-items: center;
 }
@@ -450,134 +453,143 @@ section img, video {
 }
 
 #image-double {
-display: flex;
-gap: 48px;
+  display: flex;
+  gap: 48px;
+  margin-top: 48px;
 }
-
 
 #image-double img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  }
-
+}
 
 #single-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+  margin-top: 48px;
+}
 
-  #info {
-    display: flex;
-    gap: 24px;
-  }
+#info {
+  display: flex;
+  gap: 24px;
+}
 
-  .intro-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-  }
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
 
-  .info-outer {
-    font-size: 1.4em;
-    line-height: 1.6em;
-    width: 60%;
-  }
+.info-outer {
+  font-size: 1.4em;
+  line-height: 1.6em;
+  width: 60%;
+}
 
-  .project-h2 {
-    padding: 0;
-    font-weight: 400;
-    margin: 0;
-  }
+.project-h2 {
+  padding: 0;
+  font-weight: 400;
+  margin: 0;
+}
 
- .case-title {
+.case-title {
   font-size: 2.4em;
   line-height: 1.6em;
   margin: 0;
   font-weight: 600;
-  }
+}
 
-  .services-list {
-display: flex;
-flex-wrap: wrap;
-gap: 24px;
-  }
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
-  .service-item {
-flex: calc(45% - 64px);
-padding: 48px;
-border: 1px solid black;
-font-size: 1.4em;
-line-height: 1.6em;
-  }
+.service-item {
+  flex: calc(45% - 64px);
+  padding: 48px;
+  border: 1px solid black;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
 
-  .service-item h2 {
-    font-weight: 500;
-  }
+.service-item h2 {
+  font-weight: 500;
+}
 
-  /* Components */
-.menu-button:hover, .footer-cta:hover, .menu-items a:hover {
+/* Components */
+.menu-button:hover,
+.footer-cta:hover,
+.menu-items a:hover {
   opacity: 0.7;
 }
 
 @media (max-width: 1024px) {
-  .container, .content, .hero, .footer, #contact-page, .case-content {
-      padding: 24px;
-      max-width: unset;
+  .container,
+  .content,
+  .hero,
+  .footer,
+  #contact-page,
+  .case-content {
+    padding: 24px;
+    max-width: unset;
   }
   header {
     padding: unset;
   }
-.content {
-  min-height: unset;
-}
+  .content {
+    min-height: unset;
+  }
 
-#logo-reveal {
-  min-height: unset;
-}
-#info {
-  flex-direction: column;
-}
-.intro-wrapper, .info-outer {
-  width: 100%;
-}
-#losning, #konsept {
-  flex-direction: column;
-  justify-content: center;
-}
-.column-50 {
-  width: 100%;
-}
-#konsept {
-  flex-direction: column-reverse;
-}
-section {
-  min-height: unset;
-}
-.quote-text {
-  font-size: 1.8em;
-  width: 100%;
-  min-height: 50vh;
-}
+  #logo-reveal {
+    min-height: unset;
+  }
+  #info {
+    flex-direction: column;
+  }
+  .intro-wrapper,
+  .info-outer {
+    width: 100%;
+  }
+  #losning,
+  #konsept {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .column-50 {
+    width: 100%;
+  }
+  #konsept {
+    flex-direction: column-reverse;
+  }
+  section {
+    min-height: unset;
+  }
+  .quote-text {
+    font-size: 1.8em;
+    width: 100%;
+    min-height: 50vh;
+  }
 
-#quote {
-  min-height: 25vh;
-  display: flex;
-  align-items: center;
-}
-#image-double {
-  flex-direction: column;
-}
-.contact-card {
-flex-direction: column-reverse;
-}
-.side-menu {
-  width: 100%;
-}
-.footer-cta svg {
-  display: none;
-}
-.close-button {
-  font-size: 4rem;
-}
+  #quote {
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+  }
+  #image-double {
+    flex-direction: column;
+  }
+  .contact-card {
+    flex-direction: column-reverse;
+  }
+  .side-menu {
+    width: 100%;
+  }
+  .footer-cta svg {
+    display: none;
+  }
+  .close-button {
+    font-size: 4rem;
+  }
 }
