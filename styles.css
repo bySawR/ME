@@ -142,6 +142,22 @@ a {
   opacity: 1;
 }
 
+.no-padding {
+  padding: 0!important;
+  object-fit: cover;
+}
+
+#two-images {
+  display: flex;
+  flex-direction: row;
+  object-fit: cover;
+}
+
+.column-50 img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .project-wrapper.visible {
   opacity: 1;
   transform: translateY(0); /* Reset position */
@@ -159,6 +175,10 @@ a {
 .project-wrapper img,
 video {
   width: 100%;
+}
+
+.no-margin {
+  margin: 0!important;
 }
 
 .project-title {

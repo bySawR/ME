@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Set up the IntersectionObserver to detect when elements enter or leave the viewport
+    // Set up the IntersectionObserver to detect when elements enter the viewport
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            // Check if the element is intersecting (in the viewport)
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible'); // Add 'visible' class to fade in
-            } else {
-                entry.target.classList.remove('visible'); // Remove 'visible' class to fade out
+                entry.target.classList.add('visible'); // Fade in when it enters
+                observer.unobserve(entry.target); // Stop observing so it stays visible forever
             }
         });
     }, {
