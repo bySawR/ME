@@ -613,3 +613,7 @@ video {
     font-size: 4rem;
   }
 }
+
+.square {
+  aspect-ratio: 1 / 1!important;
+}
