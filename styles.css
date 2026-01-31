@@ -478,6 +478,7 @@ video {
   margin-top: 48px;
 }
 
+
 #image-double img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -616,4 +617,8 @@ video {
 
 .square {
   aspect-ratio: 1 / 1!important;
+}
+
+.top-margin {
+  margin-top: 48px!important;
 }
